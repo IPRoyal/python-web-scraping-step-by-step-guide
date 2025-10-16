@@ -1,8 +1,6 @@
 # Python Web Scraping Tutorial (2025)
 
-<a href="https://iproyal.com/blog/python-web-scraping-step-by-step-guide/">
-  <img alt="Banner" src="https://cms.iproyal.com/uploads/Python_Web_Scraping_Step_By_Step_Guide_2022_847x300_f433168d2b.jpg" width="1694" height="600">
-</a>
+<a href="https://iproyal.com/proxies/"><img width="2180" height="550" alt="GitHub Banner" src="https://github.com/user-attachments/assets/c857fdbc-882d-4089-af87-cfa93408311d"></img></a>
 
 ## Overview
 
@@ -126,54 +124,3 @@ PROXIES = {
 Rotating proxies and randomized delays make traffic look more natural and reduce blocks.
 
 ---
-
-## Run
-
-```bash
-# scrape 10 pages with 3s delay and print language counts
-python -m src.scraper --pages 10 --delay 3
-```
-
-Options:
-- `--pages` number of pages to scrape (default 20)
-- `--delay` seconds between requests (default 3)
-- `--start-url` starting URL (default r/programming old UI)
-- `--print-titles` print collected titles
-- `--use-proxy` read proxies from env `HTTP_PROXY`/`HTTPS_PROXY` or hardcode in script
-
----
-
-## Project Structure
-
-```
-.
-├─ README.md
-├─ requirements.txt
-└─ src
-   └─ scraper.py
-```
-
----
-
-## FAQ
-
-**Can web pages detect scraping?**  
-Yes—fast or repetitive traffic, uniform User-Agents, and missing assets are signals. Slow down, randomize headers/delays, and consider headless browsers or proxies.
-
-**Is this legal?**  
-Follow site terms and robots.txt. Avoid personal data collection and rate-limit your requests.
-
-**Why old.reddit.com?**  
-Its markup is simpler for beginners. The new UI often uses dynamic class names and client-side rendering.
-
----
-
-## License
-
-MIT. See `LICENSE`.
-
----
-
-## Credits
-
-Adapted and paraphrased for GitHub from source material by IPRoyal / Justas Vitaitis (2025).
